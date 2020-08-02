@@ -1,7 +1,5 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include "Mp3TagEditor.h"
-#include "hashmap.h"
+
+#include "oni_tag_editor.h"
 
 #define noPadding(header) memcmp(header, EMPTY, 4)
 #define id_to_key(id) id[0] << 24 | id[1] << 16 | id[2] << 8 | id[3]

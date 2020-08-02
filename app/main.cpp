@@ -1,12 +1,9 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "Mp3TagEditor.h"
-#include "hashmap.h"
 
 int main(void)
 {
 
-  char *filename = "Legend of Zelda Majora's Mask OST [Disk 1] - Koji Kondo and Toru Minegeshi - Catch Small Item.mp3";
+  char *filename = "..\resources\Legend of Zelda Majora's Mask OST [Disk 1] - Koji Kondo and Toru Minegeshi - Catch Small Item.mp3";
 
   FILE *file;
 
@@ -14,7 +11,7 @@ int main(void)
 
   mp3Info *info = new_mp3Info(filename);
 
-  hashmap_t *frames = info->tag->frames;
+	hashmap_t *frames = info->tag->frames;
 
   printf("%zu\n", frames->num_elems);
 
