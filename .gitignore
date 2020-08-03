@@ -53,3 +53,13 @@ dkms.conf
 
 # Mp3's
 *.mp3
+
+# Build dir
+build/
+
+# MSVC config dir
+.vs/*
+!.vs/launch.vs.json
+
+# Vim Garbage
+*.swp
